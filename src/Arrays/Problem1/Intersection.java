@@ -16,6 +16,8 @@ public class Intersection {
             else if(arr[i]>arr1[j]) j++;
             else{
                 list.add(arr[i]);
+
+                //skips the duplicate elements
                 int current = arr[i];
                 while(i<arr.length && arr[i]==current) i++;
                 while(j<arr1.length && arr1[j]==current) j++;

@@ -3,6 +3,7 @@ package Arrays.Problem1;
 import java.util.Arrays;
 import java.util.Scanner;
 
+//print exteme elements in an alternate manner
 public class PrintExtreme {
 
     public static int[] extreme(int[] arr)
