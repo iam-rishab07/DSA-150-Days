@@ -1,9 +1,7 @@
 # 🚀 90-Day DSA Challenge: Zero to Tier-1
 A comprehensive roadmap of 300 curated problems to master Data Structures and Algorithms.
-
-**Start Date:** April 17, 2026  
-**Projected End Date:** July 15, 2026  
-**Current Status:** 🟢 Day 02 (In Progress)
+ 
+**Current Status:** (In Progress)
 
 ---
 
