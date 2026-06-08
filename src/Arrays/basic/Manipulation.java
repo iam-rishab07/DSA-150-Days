@@ -1,21 +1,20 @@
-package Arrays;
-//check if array is sorted
+package Arrays.basic;
 
-import org.w3c.dom.ls.LSOutput;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class CheckSort {
+// take array from user, multiply odd index by 2 and add 10 to even index elements
+public class Manipulation {
 
-    public static boolean checkSort(int[] arr) {
-        for(int i=1;i<arr.length;i++)
+    public static void manipulate(int[] arr)
+    {
+        for(int i=0;i<arr.length;i++)
         {
-            if(arr[i]<arr[i-1]) return false;
+            if(i%2==0) arr[i]+=10;
+            else arr[i] *= 2;
         }
-        return true;
     }
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("enter the array size : ");
@@ -27,9 +26,7 @@ public class CheckSort {
             arr[i] = sc.nextInt();
         }
         System.out.println("the Array is "+ Arrays.toString(arr));
-        boolean check = checkSort(arr);
-        if(check) System.out.println("Array is Sorted");
-        else System.out.println("Not sorted");
+        manipulate(arr);
+        System.out.println("After Manipulation "+ Arrays.toString(arr));
     }
-
 }

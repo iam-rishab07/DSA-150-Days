@@ -3,15 +3,18 @@ package Arrays.basic;
 import java.util.Arrays;
 import java.util.Scanner;
 
+
+// reverse the array given by the user
 public class Reverse {
     public static void reverse(int[] arr,int n)
     {
-        int left = 0, right = n-1;
+        int left = 0;
+        int right = n-1;
         while(left<right)
         {
-            int temp = arr[left];
-            arr[left] = arr[right];
-            arr[right] = temp;
+            int temp = arr[right];
+            arr[right] = arr[left];
+            arr[left] = temp;
             left++;
             right--;
         }

@@ -1,21 +1,19 @@
-package Arrays;
-//check if array is sorted
-
-import org.w3c.dom.ls.LSOutput;
+package Arrays.basic;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class CheckSort {
+// print all the negative elements from the array
+public class PrintNegative {
 
-    public static boolean checkSort(int[] arr) {
-        for(int i=1;i<arr.length;i++)
+    public static void negative(int[] arr)
+    {
+        for(int num:arr)
         {
-            if(arr[i]<arr[i-1]) return false;
+            if(num<0) System.out.print(num+" ");
         }
-        return true;
+        System.out.println();
     }
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("enter the array size : ");
@@ -27,9 +25,7 @@ public class CheckSort {
             arr[i] = sc.nextInt();
         }
         System.out.println("the Array is "+ Arrays.toString(arr));
-        boolean check = checkSort(arr);
-        if(check) System.out.println("Array is Sorted");
-        else System.out.println("Not sorted");
+        System.out.print("the negative elements are : ");
+        negative(arr);
     }
-
 }

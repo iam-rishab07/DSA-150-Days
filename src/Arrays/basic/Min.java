@@ -2,6 +2,8 @@ package Arrays.basic;
 
 import java.util.Scanner;
 
+
+// find the min element from the array
 public class Min {
     public static int minElement(int[] arr, int n)
     {

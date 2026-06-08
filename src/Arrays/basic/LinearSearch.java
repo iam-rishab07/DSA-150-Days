@@ -2,13 +2,13 @@ package Arrays.basic;
 
 import java.util.Scanner;
 
+// search for an element in the array, if found return the index
 public class LinearSearch {
     public static int linearSearch(int[] arr, int n, int target)
     {
         for(int i=0;i<n;i++)
         {
-            if(arr[i]==target)
-            return i;
+            if(arr[i]==target) return i;
         }
         return -1;
     }
@@ -24,12 +24,12 @@ public class LinearSearch {
         }
         System.out.println("Enter Element to Search : ");
         int target = sc.nextInt();
-        int result = linearSearch(arr,n,target);
-        if(result==-1)
+        int res = linearSearch(arr,n,target);
+        if(res==-1)
         {
-            System.out.println("Element not found...");
+            System.out.println("element not found!");
         }else{
-            System.out.println("Element found at index "+result);
+            System.out.println("Element found at index : "+res);
         }
     }
 }

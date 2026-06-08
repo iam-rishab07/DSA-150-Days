@@ -1,21 +1,9 @@
-package Arrays;
-//check if array is sorted
-
-import org.w3c.dom.ls.LSOutput;
+package Arrays.basic;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class CheckSort {
-
-    public static boolean checkSort(int[] arr) {
-        for(int i=1;i<arr.length;i++)
-        {
-            if(arr[i]<arr[i-1]) return false;
-        }
-        return true;
-    }
-
+public class TemplateMain {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("enter the array size : ");
@@ -27,9 +15,5 @@ public class CheckSort {
             arr[i] = sc.nextInt();
         }
         System.out.println("the Array is "+ Arrays.toString(arr));
-        boolean check = checkSort(arr);
-        if(check) System.out.println("Array is Sorted");
-        else System.out.println("Not sorted");
     }
-
 }
