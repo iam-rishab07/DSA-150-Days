@@ -1,5 +1,5 @@
-# 🚀 90-Day DSA Challenge: Zero to Tier-1
-A comprehensive roadmap of 300 curated problems to master Data Structures and Algorithms.
+# 🚀 150-Day DSA Challenge: Zero to Tier-1
+A comprehensive roadmap of 300+ curated problems to master Data Structures and Algorithms.
  
 **Current Status:** (In Progress)
 
@@ -12,7 +12,7 @@ A comprehensive roadmap of 300 curated problems to master Data Structures and Al
 
 ## ⚙️ Environment
 - **Language:** [ Java ]
-- **Platforms:** LeetCode, GeeksforGeeks, Coding Ninjas
+- **Platforms:** LeetCode, GeeksforGeeks
 
 ---
 *Follow my journey! Star ⭐ this repo if you find the solutions helpful.* *Created with ❤️ by Rishi :)*
