@@ -8,7 +8,7 @@ public class BookAllocation {
         long pages = 0;
         for(int i=0;i<arr.length;i++)
         {
-            if(pages+arr[i]>maxPages)   // if adding current book exceeds pagelimit(maxPages),
+            if(pages+arr[i]>maxPages)   // if adding current book exceeds page limit(maxPages),
             {                           // assign book to next student
                 studentCount++;
                 pages=arr[i];
